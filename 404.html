@@ -3,24 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CB Group LLC</title>
-<meta name="description" content="CB Group LLC — advisory and consulting." />
+<title>404 — CB Group LLC</title>
+<meta name="description" content="Page not found." />
 <meta name="theme-color" content="#FAFAFA" />
-<link rel="canonical" href="https://cbgroup.global/" />
-
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="CB Group LLC" />
-<meta property="og:description" content="CB Group LLC — advisory and consulting." />
-<meta property="og:url" content="https://cbgroup.global/" />
-<meta property="og:image" content="https://cbgroup.global/favicon-512.png" />
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="CB Group LLC" />
-<meta name="twitter:description" content="CB Group LLC — advisory and consulting." />
-<meta name="twitter:image" content="https://cbgroup.global/favicon-512.png" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -45,23 +30,18 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-
   .page {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     padding: 40px 56px;
   }
-
-  /* Header */
-  .header,
-  .footer {
+  .header, .footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
   .footer { align-items: flex-end; }
-
   .mono {
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 11px;
@@ -69,65 +49,43 @@
     text-transform: uppercase;
     color: var(--mute);
   }
-
-  /* Main */
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 56px;
+    gap: 32px;
   }
-
-  .wordmark {
+  .code {
     margin: 0;
     font-weight: 700;
     font-size: 220px;
     line-height: 1;
     letter-spacing: -0.035em;
     color: var(--ink);
-    display: inline-flex;
-    align-items: baseline;
   }
-  .wordmark .grp {
-    font-weight: 400;
-    color: var(--mute);
-    margin-left: 0.11em;
-  }
-
-  .tagline {
+  .msg {
     margin: 0;
-    max-width: 760px;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.25;
-    letter-spacing: 0.06em;
+    font-size: 28px;
+    letter-spacing: 0.04em;
     color: var(--ink-2);
   }
-
-  /* Footer */
-  .contact-label { margin-bottom: 8px; }
-  .email {
+  .home {
     color: var(--ink);
     text-decoration: none;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
-    letter-spacing: -0.5px;
   }
-  .email:hover {
+  .home:hover {
     text-decoration: underline;
     text-underline-offset: 4px;
   }
-  .email .arrow { margin-left: 4px; }
-
-  /* Mobile */
   @media (max-width: 768px) {
     .page { padding: 24px; }
-    .wordmark { font-size: clamp(96px, 22vw, 220px); }
-    .tagline  { font-size: clamp(20px, 4vw, 40px); }
-    .main { gap: 32px; }
-    .email { font-size: 22px; }
+    .code { font-size: clamp(96px, 22vw, 220px); }
+    .msg  { font-size: clamp(18px, 4vw, 28px); }
   }
 </style>
 </head>
@@ -138,15 +96,13 @@
     </header>
 
     <main class="main">
-      <h1 class="wordmark" aria-label="CB Group"><span>cb</span><span>.</span><span class="grp">group</span></h1>
-      <p class="tagline">ADVISORY · CONSULTING</p>
+      <h1 class="code">404</h1>
+      <p class="msg">Page not found.</p>
+      <a class="home" href="/">← Back to cb.group</a>
     </main>
 
     <footer class="footer">
-      <div>
-        <div class="mono contact-label">Contact</div>
-        <a class="email" href="mailto:hello@cbgroup.global">hello@cbgroup.global<span class="arrow" aria-hidden="true">↗</span></a>
-      </div>
+      <span class="mono">cbgroup.global</span>
     </footer>
   </div>
 </body>
