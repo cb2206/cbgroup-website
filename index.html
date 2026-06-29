@@ -4,21 +4,21 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CB Group LLC</title>
-<meta name="description" content="CB Group LLC — advisory and consulting." />
+<meta name="description" content="CB Group LLC — advisory & consulting, and home of pod2swim and quickprotect." />
 <meta name="theme-color" content="#FAFAFA" />
 <link rel="canonical" href="https://cbgroup.global/" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="CB Group LLC" />
-<meta property="og:description" content="CB Group LLC — advisory and consulting." />
+<meta property="og:description" content="CB Group LLC — advisory & consulting, and home of pod2swim and quickprotect." />
 <meta property="og:url" content="https://cbgroup.global/" />
 <meta property="og:image" content="https://cbgroup.global/favicon-512.png" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="CB Group LLC" />
-<meta name="twitter:description" content="CB Group LLC — advisory and consulting." />
+<meta name="twitter:description" content="CB Group LLC — advisory & consulting, and home of pod2swim and quickprotect." />
 <meta name="twitter:image" content="https://cbgroup.global/favicon-512.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -106,6 +106,54 @@
     color: var(--ink-2);
   }
 
+  /* Offering rows */
+  .offerings {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .offering-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    color: var(--ink-2);
+  }
+  a.offering-label {
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+  a.offering-label:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  .project-link {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .project-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .project-sep {
+    color: var(--mute);
+    font-size: 13px;
+  }
+
   /* Footer */
   .contact-label { margin-bottom: 8px; }
   .email {
@@ -127,6 +175,8 @@
     .wordmark { font-size: clamp(96px, 22vw, 220px); }
     .tagline  { font-size: clamp(20px, 4vw, 40px); }
     .main { gap: 32px; }
+    .offerings { gap: 20px; }
+    .offering-label { font-size: clamp(20px, 5vw, 32px); }
     .email { font-size: 22px; }
   }
 </style>
@@ -139,7 +189,19 @@
 
     <main class="main">
       <h1 class="wordmark" aria-label="CB Group"><span>cb</span><span>.</span><span class="grp">group</span></h1>
-      <p class="tagline">ADVISORY · CONSULTING</p>
+      <ul class="offerings">
+        <li>
+          <a class="offering-label" href="mailto:hello@cbgroup.global">Advisory &amp; Consulting</a>
+        </li>
+        <li>
+          <span class="offering-label">Side Projects</span>
+          <span class="projects">
+            <a class="project-link" href="https://pod2swim.com" target="_blank" rel="noopener">pod2swim ↗</a>
+            <span class="project-sep" aria-hidden="true">·</span>
+            <a class="project-link" href="https://quickprotect.app" target="_blank" rel="noopener">quickprotect ↗</a>
+          </span>
+        </li>
+      </ul>
     </main>
 
     <footer class="footer">
