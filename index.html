@@ -4,21 +4,21 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CB Group LLC</title>
-<meta name="description" content="CB Group LLC — advisory & consulting, and home of pod2swim and quickprotect." />
+<meta name="description" content="CB Group LLC — advisory & consulting, and home of pod2swim, quickprotect and plopfile." />
 <meta name="theme-color" content="#FAFAFA" />
 <link rel="canonical" href="https://cbgroup.global/" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="CB Group LLC" />
-<meta property="og:description" content="CB Group LLC — advisory & consulting, and home of pod2swim and quickprotect." />
+<meta property="og:description" content="CB Group LLC — advisory & consulting, and home of pod2swim, quickprotect and plopfile." />
 <meta property="og:url" content="https://cbgroup.global/" />
 <meta property="og:image" content="https://cbgroup.global/favicon-512.png" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="CB Group LLC" />
-<meta name="twitter:description" content="CB Group LLC — advisory & consulting, and home of pod2swim and quickprotect." />
+<meta name="twitter:description" content="CB Group LLC — advisory & consulting, and home of pod2swim, quickprotect and plopfile." />
 <meta name="twitter:image" content="https://cbgroup.global/favicon-512.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -137,6 +137,7 @@
     align-items: center;
     justify-content: center;
     gap: 14px;
+    flex-wrap: wrap;
   }
   .project-link {
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -172,7 +173,9 @@
   /* Mobile */
   @media (max-width: 768px) {
     .page { padding: 24px; }
-    .wordmark { font-size: clamp(96px, 22vw, 220px); }
+    .wordmark { font-size: clamp(56px, 19vw, 220px); }
+    .projects { gap: 8px 20px; }
+    .project-sep { display: none; }
     .tagline  { font-size: clamp(20px, 4vw, 40px); }
     .main { gap: 32px; }
     .offerings { gap: 20px; }
@@ -199,6 +202,8 @@
             <a class="project-link" href="https://pod2swim.com" target="_blank" rel="noopener">pod2swim ↗</a>
             <span class="project-sep" aria-hidden="true">·</span>
             <a class="project-link" href="https://quickprotect.app" target="_blank" rel="noopener">quickprotect ↗</a>
+            <span class="project-sep" aria-hidden="true">·</span>
+            <a class="project-link" href="/plopfile/">plopfile</a>
             <span class="project-sep" aria-hidden="true">·</span>
             <a class="project-link" href="https://github.com/cb2206/ha-marvin-connected-home" target="_blank" rel="noopener" title="Home Assistant integration for Marvin Connected Home">ha-marvin-connected-home ↗</a>
           </span>
